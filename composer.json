@@ -1,0 +1,43 @@
+{
+    "name": "crehler/meta-robots",
+    "description": "Editable meta robots",
+    "type": "shopware-platform-plugin",
+    "license": "Proprietary",
+    "version": "1.0.6",
+    "authors": [
+        {
+            "name": "Crehler Sp. z o. o.",
+            "email": "support@crehler.com",
+            "homepage": "https://crehler.com",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "support@crehler.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crehler\\MetaRobots\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Crehler\\MetaRobots\\CrehlerMetaRobots",
+        "plugin-icon": "src/Resources/config/plugin.png",
+        "copyright": "(c) by Crehler Sp. z o. o.",
+        "label": {
+            "de-DE": "Editierbare Meta Robots von Crehler",
+            "en-GB": "Editable meta robots by Crehler",
+            "pl-PL": "Konfiguracja meta robots by Crehler"
+        },
+        "description": {
+            "de-DE": "Das Plugin Meta Robots ermöglicht es Ihnen, individuelle Meta Robots Tags für Ihren Webshop anzulegen, die beim Aufruf der Seite von Crawler einer Suchmaschine ausgelesen werden.",
+            "en-GB": "The Meta Robots plugin enables you to create individual meta robots tags for your online shop which are then being read out by search engine crawlers when they access the page.",
+            "pl-PL": "Wtyczka Meta Robots umożliwia ustawienie metatagów Robots Twojego sklepu internetowego."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://store.shopware.com/crehler.html",
+            "en-GB": "https://store.shopware.com/en/crehler.html",
+            "pl-PL": "https://store.shopware.com/en/crehler.html"
+        }
+    }
+}

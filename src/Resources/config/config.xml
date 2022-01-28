@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Meta Robots configuration</title>
+        <title lang="de-DE">Konfiguration von Meta Robots</title>
+        <title lang="pl-PL">Konfiguracja Meta Robots</title>
+        <input-field type="single-select">
+            <name>robots</name>
+            <label>"robots" tag</label>
+            <label lang="de-DE">Tag "robots"</label>
+            <label lang="pl-PL">Tag "robots"</label>
+            <options>
+                <option>
+                    <id>index,follow</id>
+                    <name>index,follow</name>
+                </option>
+                <option>
+                    <id>noindex,follow</id>
+                    <name>noindex,follow</name>
+                </option>
+                <option>
+                    <id>noindex,nofollow</id>
+                    <name>noindex,nofollow</name>
+                </option>
+                <option>
+                    <id>index,nofollow</id>
+                    <name>index,nofollow</name>
+                </option>
+            </options>
+        </input-field>
+        <input-field type="int">
+            <name>revisit</name>
+            <label>Tag "revisit" (in days)</label>
+            <label lang="de-DE">Tag "revisit" (in Tagen)</label>
+            <label lang="pl-PL">Tag "revisit" (w dniach)</label>
+            <helpText>By default and with the setting "0": 15 days</helpText>
+            <helpText lang="de-DE">Voreingestellt und mit der Einstellung "0": 15 Tage</helpText>
+            <helpText lang="pl-PL">Domyślnie oraz przy ustawieniu "0": 15 dni</helpText>
+            <defaultValue>15</defaultValue>
+        </input-field>
+        <input-field type="textarea">
+            <name>customRobots</name>
+            <label>Custom robots tag content</label>
+            <label lang="de-DE">Benutzerdefinierter Inhalt des Robots-Tags</label>
+            <label lang="pl-PL">Niestandardowa treść tagu robots</label>
+            <helpText>If you fill in this field, it will overwrite the value from the "Robots" field</helpText>
+            <helpText lang="de-DE">Wenn Sie dieses Feld ergänzen, wird es den Wert des Feldes "Robots" überschrieben.</helpText>
+            <helpText lang="pl-PL">Jeśli wypełnisz to pole, będzie one nadpisywać wartość z pola "Robots".</helpText>
+        </input-field>
+    </card>
+</config>
